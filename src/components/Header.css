@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+
+}
+
+
+/* =========================================
+   HEADER CONTAINER
+========================================= */
+
+.header-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TOP SHIPPING BAR
+========================================= */
+
+.top-bar {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #334a97;
+  color: #ffffff;
+}
+
+.top-bar span {
+  font-size: 14px;
+  font-weight: 400;
+ letter-spacing: 1px;
+}
+
+.top-bar .shop-now {
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   MAIN HEADER
+========================================= */
+
+.main-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-row {
+  min-height: 88px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.urban-logo {
+  width: 210px;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  letter-spacing: 0.8px;
+ 
+}
+
+.main-nav a:hover {
+  color: #334a97;
+}
+
+.main-nav i {
+  margin-left: 8px;
+  font-size: 11px;
+}
+
+
+/* =========================================
+   HEADER ICONS
+========================================= */
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 17px;
+}
+
+.header-icons>i {
+  font-size: 23px;
+  color: #111111;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon i {
+  font-size: 23px;
+  color: #111111;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -9px;
+  right: -8px;
+
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #111111;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 9px !important;
+  font-weight: 600 !important;
+}
+
+
+/* =========================================
+   CART PRICE
+========================================= */
+
+.cart-price {
+  font-size: 15px !important;
+  white-space: nowrap;
+  color: #111111;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-nav {
+    gap: 15px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+  }
+
+  .urban-logo {
+    width: 150px;
+  }
+
+  .header-icons {
+    gap: 10px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .top-bar {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .top-bar .text-end {
+    text-align: center !important;
+    margin-top: 5px;
+  }
+
+  .header-row {
+    padding: 15px 0;
+  }
+
+  .urban-logo {
+    width: 160px;
+    margin-bottom: 15px;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header-icons {
+    justify-content: flex-start;
+  }
+
+}

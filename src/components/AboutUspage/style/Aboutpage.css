@@ -1,0 +1,568 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #171717;
+}
+
+
+/* =========================================
+   OUR STORY
+========================================= */
+
+.about-story {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px 40px 20px;
+
+  box-sizing: border-box;
+}
+
+.about-story-content {
+  width: 100%;
+  text-align: center;
+}
+
+.about-story-content h2 {
+  margin: 0 0 25px;
+
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+.about-story-content p {
+  max-width: 1350px;
+  margin: 0 auto 25px;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #707070;
+}
+
+.about-story-image {
+  width: 100%;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================================
+   OUR PROMISE
+========================================= */
+
+.about-promise {
+  width: 100%;
+  padding: 80px 40px 100px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+}
+
+
+/* Heading */
+
+.about-promise-heading {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 65px;
+}
+
+.about-promise-heading h2 {
+  margin: 0 0 18px;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+.about-promise-heading p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   SIX CARDS
+========================================= */
+
+.promise-grid {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 25px;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   PROMISE CARD
+========================================= */
+
+.promise-card {
+  width: 100%;
+  height: 245px;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 2px solid #c9a36a;
+
+  /*
+     Hexagon shape
+  */
+
+  clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );
+
+  transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.promise-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* Icon */
+
+.promise-icon {
+  margin-bottom: 18px;
+
+  font-size: 30px;
+  line-height: 1;
+}
+
+
+/* Title */
+
+.promise-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+
+  color: #222222;
+}
+
+
+/* Description */
+
+.promise-card p {
+  width: 100%;
+  max-width: 180px;
+
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .promise-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .about-story {
+    padding: 50px 20px;
+  }
+
+  .about-story-content h2 {
+    font-size: 30px;
+  }
+
+  .about-story-content p {
+    font-size: 16px;
+  }
+
+  .about-promise {
+    padding: 60px 20px;
+  }
+
+  .about-promise-heading {
+    margin-bottom: 45px;
+  }
+
+  .about-promise-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-promise-heading p {
+    font-size: 16px;
+  }
+
+  .promise-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .promise-card {
+    height: 230px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .promise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promise-card {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================
+   OUR VISION
+========================================= */
+
+.about-vision {
+  width: 100%;
+  padding: 20px 40px 100px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   VISION HEADING
+========================================= */
+
+.about-vision-heading {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.about-vision-heading h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+.about-vision-heading p {
+  max-width: 1400px;
+
+  margin: 0 auto 25px;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   IMAGE + CONTENT
+========================================= */
+
+.vision-content {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.vision-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.vision-image img {
+  width: 100%;
+  height: 440px;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.vision-image:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   RIGHT TEXT
+========================================= */
+
+.vision-text {
+  width: 100%;
+}
+
+.vision-text h2 {
+  margin: 0 0 25px;
+
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+.vision-text p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .about-vision {
+    padding: 60px 25px 80px;
+  }
+
+  .about-vision-heading h2 {
+    font-size: 36px;
+  }
+
+  .vision-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .vision-image img {
+    height: 500px;
+  }
+
+  .vision-text h2 {
+    font-size: 34px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .about-vision {
+    padding: 50px 20px 70px;
+  }
+
+  .about-vision-heading {
+    margin-bottom: 45px;
+  }
+
+  .about-vision-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-vision-heading p {
+    font-size: 16px;
+  }
+
+  .vision-content {
+    gap: 35px;
+  }
+
+  .vision-image img {
+    height: 350px;
+  }
+
+  .vision-text h2 {
+    font-size: 30px;
+  }
+
+  .vision-text p {
+    font-size: 16px;
+  }
+
+}
+
+
+/* =========================================
+   OUR CULTURE
+========================================= */
+
+.about-culture {
+  width: 100%;
+  padding: 80px 40px 100px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.culture-content {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.culture-content h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+.culture-content p {
+  max-width: 1400px;
+
+  margin: 0 auto 25px;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #707070;
+}
+
+.culture-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .about-culture {
+    padding: 60px 25px 80px;
+  }
+
+  .culture-content h2 {
+    font-size: 36px;
+  }
+
+  .culture-content p {
+    font-size: 17px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .about-culture {
+    padding: 50px 20px 70px;
+  }
+
+  .culture-content h2 {
+    font-size: 30px;
+  }
+
+  .culture-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+}
+

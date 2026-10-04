@@ -1,0 +1,123 @@
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Arrows */
+
+.hero-prev,
+.hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  font-size: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: 0.3s ease;
+}
+
+.hero-prev {
+  left: 25px;
+}
+
+.hero-next {
+  right: 25px;
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+  background: #334a97;
+  color: #ffffff;
+}
+
+/* Dots */
+
+.hero-dots {
+  position: absolute;
+
+  bottom: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 8px;
+
+  z-index: 10;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #334a97;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .hero-prev,
+  .hero-next {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .hero-prev {
+    left: 10px;
+  }
+
+  .hero-next {
+    right: 10px;
+  }
+
+  .hero-dots {
+    bottom: 10px;
+  }
+
+}

@@ -1,0 +1,383 @@
+/* =========================================
+   WHAT'S NEW PAGE
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.whats-new-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+body {
+
+  font-family: "Outfit", sans-serif;
+
+}
+
+/* =========================================
+   BREADCRUMB BANNER
+========================================= */
+
+.whats-new-banner {
+  width: 100%;
+  height: 215px;
+
+  background-image: url("../../../assets/breadcrumbs-woo.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BANNER CONTENT
+========================================= */
+
+.whats-new-banner-content {
+  width: 92%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.whats-new-banner h1 {
+  margin: 0 0 12px;
+
+  font-size: 44px;
+  line-height: 1.2;
+
+  font-weight: 500;
+  text-decoration: none;
+  color: #171717;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.whats-new-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+
+/* Home */
+
+.whats-new-breadcrumb span:first-child {
+  color: #777;
+}
+
+
+/* Arrow */
+
+.whats-new-breadcrumb i {
+  font-size: 13px;
+
+  color: #334a97;
+}
+
+
+/* Current Page */
+
+.breadcrumb-current {
+  color: #111;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .whats-new-banner {
+    height: 190px;
+  }
+
+  .whats-new-banner h1 {
+    font-size: 38px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .whats-new-banner {
+    height: 170px;
+  }
+
+  .whats-new-banner-content {
+    width: 88%;
+  }
+
+  .whats-new-banner h1 {
+    font-size: 32px;
+  }
+
+  .whats-new-breadcrumb {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+}
+
+/* =========================================
+   WHAT'S NEW PAGE
+========================================= */
+
+.whatsnew-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   PRODUCTS SECTION
+========================================= */
+
+.whatsnew-products {
+  width: 100%;
+  padding: 75px 4% 100px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CATEGORY SECTION
+========================================= */
+
+.whatsnew-category {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.whatsnew-category:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   CATEGORY HEADING
+========================================= */
+
+.whatsnew-category-heading {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.whatsnew-category-heading h2 {
+  margin: 0;
+
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 600;
+
+  color: #171717;
+}
+
+
+/* =========================================
+   CATEGORY UNDERLINE
+========================================= */
+
+.whatsnew-category-heading h2::after {
+  content: "";
+
+  display: block;
+
+  width: 55px;
+  height: 3px;
+
+  margin: 15px auto 0;
+
+  background: #334a97;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.whatsnew-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 42px 35px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.whatsnew-card {
+  width: 100%;
+  min-width: 0;
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.whatsnew-image {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #f7f7f7;
+}
+
+.whatsnew-image img {
+  width: 100%;
+  height: 470px;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* Hover */
+
+.whatsnew-card:hover .whatsnew-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   PRODUCT NAME
+========================================= */
+
+.whatsnew-card h3 {
+  margin: 18px 0 8px;
+
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+
+  color: #222222;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.whatsnew-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.whatsnew-sale-price {
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #334a97;
+}
+
+.whatsnew-original-price {
+  font-size: 15px;
+
+  color: #999999;
+
+  text-decoration: line-through;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .whatsnew-products {
+    padding: 60px 30px 80px;
+  }
+
+  .whatsnew-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px 25px;
+  }
+
+  .whatsnew-category-heading h2 {
+    font-size: 30px;
+  }
+
+  .whatsnew-image img {
+    height: 400px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .whatsnew-products {
+    padding: 50px 20px 70px;
+  }
+
+  .whatsnew-category {
+    margin-bottom: 60px;
+  }
+
+  .whatsnew-category-heading {
+    margin-bottom: 30px;
+  }
+
+  .whatsnew-category-heading h2 {
+    font-size: 27px;
+  }
+
+  .whatsnew-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .whatsnew-image img {
+    height: auto;
+  }
+
+  .whatsnew-card h3 {
+    font-size: 17px;
+  }
+
+}
